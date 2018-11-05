@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WWWZZ321' => 'zhangzhi@njfae.com' }
-  s.source           = { :git => 'https://github.com/WWWZZ321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
+  s.source           = { :git => 'https://gitee.com/wwwzz321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
