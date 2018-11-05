@@ -1,7 +1,9 @@
-use_frameworks!
+#use_frameworks!
+platform :ios, '8.0'
+#install! 'cocoapods', :deterministic_uuids => false
 
 target 'RTMapSDK_Example' do
-  pod 'RTMapSDK', :path => '../'
+     pod 'RTMapSDK', :path => '../'
 
   target 'RTMapSDK_Tests' do
     inherit! :search_paths

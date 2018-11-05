@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 WWWZZ321. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface RTAppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -7,6 +7,7 @@
 //
 
 #import "RTViewController.h"
+#import "RealTimeNavigationViewController.h"
 
 @interface RTViewController ()
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+}
+
+- (IBAction)jumpMap:(UIButton *)sender {
+    RealTimeNavigationViewController *vc = [[RealTimeNavigationViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    //    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    //    [self presentViewController:navi animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

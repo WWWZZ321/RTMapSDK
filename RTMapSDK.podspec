@@ -25,18 +25,43 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WWWZZ321' => 'zhangzhi@njfae.com' }
-  s.source           = { :git => 'https://github.com/WWWZZ321/RTMapSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/WWWZZ321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RTMapSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'RTMapSDK' => ['RTMapSDK/Assets/*.png']
-  # }
+    s.platform     = :ios, '8.0'
+    s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+   s.subspec 'ARSDK' do |ss|
+   ss.source_files = 'RTMapSDK/Classes/RTM/SDK/ARSDK/include/*'
+   ss.public_header_files = 'RTMapSDK/Classes/RTM/SDK/ARSDK/include/*.h'
+   ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/ARSDK/libARSDK.a'
+   ss.resources = 'RTMapSDK/Classes/RTM/SDK/ARSDK/RTImages.bundle'
+   ss.dependency 'RTMapSDK/RTLbsLocation'
+   end
+
+   s.subspec 'RTLbsLocation' do |ss|
+   ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/*.h'
+   #s.public_header_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/*.h'
+      ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/libRTLbsLocation.a'
+
+      end
+
+    s.subspec 'RTLbsMapSDK' do |ss|
+    ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
+    ss.public_header_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
+    ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
+    ss.resources = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/RtmapRes.bundle'
+    end
+
+
+    s.frameworks = 'UIKit','CoreMotion','SystemConfiguration','CoreLocation','CoreBluetooth','Foundation','CoreGraphics'
+    s.libraries = 'sqlite3','z'
+    
+    s.dependency 'iCarousel'
+    s.dependency 'SDWebImage'
+    s.dependency 'FLAnimatedImage'
+    s.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
 end
