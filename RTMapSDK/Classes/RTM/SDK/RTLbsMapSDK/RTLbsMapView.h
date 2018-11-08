@@ -408,6 +408,28 @@ typedef enum {
  */
 - (NSArray*)getRegionPoiWithLocation:(CGPoint)point startMeter:(NSInteger)startMeter endMeter:(NSInteger)endMeter;
 
+
+/**
+ @param blankPoi 空余Poi
+ @param UsingPoi UseingPoi
+ @param norColor 空余PoiColor
+ @param selectColor UseingPoi Color
+ */
+- (void) mapViewPackView:(NSArray *)blankPoi usingPOI:(NSArray *)UsingPoi norColor:(UIColor*)norColor selectColor:(UIColor*)selectColor;
+
+/**
+ 绘制Poi 自定义颜色
+
+ @param PoiDicArray 字典数组
+ poi_name   名称
+ poi_no     Poi ID
+ a          颜色
+ r
+ g
+ b
+ */
+- (void) mapViewRenderPOIColor:(NSArray*)PoiDicArray;
+
 @end
 
 
