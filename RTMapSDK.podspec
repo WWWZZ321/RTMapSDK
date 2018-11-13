@@ -52,7 +52,7 @@ TODO: Add long description of the pod here.
     s.subspec 'RTLbsMapSDK' do |ss|
     ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
     ss.public_header_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
-    ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
+    # ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
     ss.resources = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/RtmapRes.bundle'
     end
 
