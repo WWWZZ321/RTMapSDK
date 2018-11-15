@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RTMapSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of RTMapSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -58,5 +58,6 @@ Pod::Spec.new do |s|
     s.frameworks = 'UIKit','CoreMotion','SystemConfiguration','CoreLocation','CoreBluetooth','Foundation','CoreGraphics'
     s.libraries = 'sqlite3','z'
 
-    s.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
+    s.pod_target_xcconfig  = {'OTHER_LDFLAGS' => '-ObjC'}
+    s.xcconfig = {'OTHER_CFLAGS' => '-fembed-bitcode'}
 end
