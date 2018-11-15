@@ -40,23 +40,29 @@ Pod::Spec.new do |s|
    ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/ARSDK/libARSDK.a'
    ss.resources = 'RTMapSDK/Classes/RTM/SDK/ARSDK/RTImages.bundle'
    ss.dependency 'RTMapSDK/RTLbsLocation'
+   ss.dependency 'RTMapSDK/RTLbsMapSDK'
+   ss.frameworks = 'CoreGraphics','QuartzCore','ImageIO','CoreMedia','CoreVideo','AVFoundation'
+   ss.libraries = 'c++'
    end
 
    s.subspec 'RTLbsLocation' do |ss|
    ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/*.h'
       ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/libRTLbsLocation.a'
-
+      ss.frameworks = 'UIKit','CoreMotion','SystemConfiguration','CoreLocation','CoreBluetooth','Foundation','CoreGraphics'
+      ss.libraries = 'c++','z','sqlite3'
       end
 
      s.subspec 'RTLbsMapSDK' do |ss|
     ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
      ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
     ss.resources = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/RtmapRes.bundle'
+    ss.frameworks = 'CoreLocation','CoreBluetooth','UIKit','Foundation','CoreGraphics','OpenGLES','QuartzCore'
+    ss.libraries = 'c++','z','sqlite3'
     end
 
 
     s.frameworks = 'UIKit','CoreMotion','SystemConfiguration','CoreLocation','CoreBluetooth','Foundation','CoreGraphics'
-    s.libraries = 'sqlite3','z'
+    s.libraries = 'sqlite3','z','c++'
 
     s.pod_target_xcconfig  = {'OTHER_LDFLAGS' => '-ObjC'}
     s.xcconfig = {'OTHER_CFLAGS' => '-fembed-bitcode'}
