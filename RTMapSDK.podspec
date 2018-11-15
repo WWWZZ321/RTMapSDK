@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                    室内地图导航SDK
                          DESC
 
   s.homepage         = 'https://github.com/WWWZZ321/RTMapSDK'
@@ -44,24 +44,19 @@ TODO: Add long description of the pod here.
 
    s.subspec 'RTLbsLocation' do |ss|
    ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/*.h'
-   #s.public_header_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/*.h'
       ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsLocationSDK/libRTLbsLocation.a'
 
       end
 
-    s.subspec 'RTLbsMapSDK' do |ss|
+     s.subspec 'RTLbsMapSDK' do |ss|
     ss.source_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
-    ss.public_header_files = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/*.h'
-    # ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
+     ss.vendored_libraries = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/lib3DMapView.a'
     ss.resources = 'RTMapSDK/Classes/RTM/SDK/RTLbsMapSDK/RtmapRes.bundle'
     end
 
 
     s.frameworks = 'UIKit','CoreMotion','SystemConfiguration','CoreLocation','CoreBluetooth','Foundation','CoreGraphics'
     s.libraries = 'sqlite3','z'
-    
-    s.dependency 'iCarousel'
-    s.dependency 'SDWebImage'
-    s.dependency 'FLAnimatedImage'
+
     s.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
 end

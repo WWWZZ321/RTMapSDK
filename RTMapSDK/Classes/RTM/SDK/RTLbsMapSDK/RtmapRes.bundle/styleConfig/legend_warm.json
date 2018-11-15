@@ -64,12 +64,12 @@
                   {"no":210106, "name":"不可到达区域", "showLabel":1, "showModel":1, "color":"#fbf0c3", "borderColor":"ede0ab", "iconName":"", "texName":"", "borderWidth":1.0, "height":0, "overlayPriority":2}
                   ],
     "styles":[
-              {"no":3, "name":"不可到达区", "showLabel":1, "showModel":1, "color":"#fbf0c3", "borderColor":"f5e9b8", "iconName":"", "texName":"", "borderWidth":1, "height":0, "overlayPriority":0},
-              {"no":4, "name":"无效区域", "showLabel":1, "showModel":1, "color":"#fbf0c3", "borderColor":"f5e9b8", "iconName":"", "texName":"", "borderWidth":1, "height":2, "overlayPriority":0},
-              {"no":5, "name":"商铺", "showLabel":1, "showModel":1, "color":"#D8f0ce92", "borderColor":"#e3c289", "iconName":"", "texName":"", "borderWidth":1, "height":2, "overlayPriority":10},
-              {"no":6, "name":"卫生间", "showLabel":1, "showModel":1, "color":"#D8fbf0c3", "borderColor":"#ede0ab", "iconName":"", "texName":"", "borderWidth":1, "height":2.0, "overlayPriority":10},
-              {"no":7, "name":"楼梯", "showLabel":1, "showModel":1, "color":"#D8fbf0c3", "borderColor":"#ede0ab", "iconName":"Market/Stairs", "texName":"", "borderWidth":1, "height":0, "overlayPriority":10},
-              {"no":8, "name":"楼面", "showLabel":1, "color":"#dddddd", "borderColor":"", "iconName":"", "texName":"", "borderWidth":1, "height":0, "overlayPriority":0}
+              {"id":3, "name":"不可到达区", "showLabel":1, "showModel":1, "color":"#fbf0c3", "borderColor":"f5e9b8", "iconName":"", "texName":"", "borderWidth":1, "height":0, "overlayPriority":0},
+              {"id":4, "name":"无效区域", "showLabel":1, "showModel":1, "color":"#fbf0c3", "borderColor":"f5e9b8", "iconName":"", "texName":"", "borderWidth":1, "height":2, "overlayPriority":0},
+              {"id":5, "name":"商铺", "showLabel":1, "showModel":1, "color":"#D8f0ce92", "borderColor":"#e3c289", "iconName":"", "texName":"", "borderWidth":1, "height":2, "overlayPriority":10},
+              {"id":6, "name":"卫生间", "showLabel":1, "showModel":1, "color":"#D8fbf0c3", "borderColor":"#ede0ab", "iconName":"", "texName":"", "borderWidth":1, "height":2.0, "overlayPriority":10},
+              {"id":7, "name":"楼梯", "showLabel":1, "showModel":1, "color":"#D8fbf0c3", "borderColor":"#ede0ab", "iconName":"Market/Stairs", "texName":"", "borderWidth":1, "height":0, "overlayPriority":10},
+              {"id":8, "name":"楼面", "showLabel":1, "color":"#dddddd", "borderColor":"", "iconName":"", "texName":"", "borderWidth":1, "height":0, "overlayPriority":0}
               ]
 }
 
