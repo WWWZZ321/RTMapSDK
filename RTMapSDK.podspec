@@ -11,22 +11,15 @@ Pod::Spec.new do |s|
   s.version          = '0.1.1'
   s.summary          = 'A short description of RTMapSDK.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
                     室内地图导航SDK
                          DESC
 
   s.homepage         = 'https://github.com/WWWZZ321/RTMapSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WWWZZ321' => 'zhangzhi@njfae.com' }
   s.source           = { :git => 'https://gitee.com/wwwzz321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
