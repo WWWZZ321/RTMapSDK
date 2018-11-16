@@ -8,14 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RTMapSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of RTMapSDK.'
 
   s.description      = <<-DESC
                     室内地图导航SDK
+                    RTLbsMapSDK 地图绘制库，可单独使用
+                    RTLbsLocation 室内定位
+                    ARSDK AR导航，依赖另外两个库
                          DESC
 
-  s.homepage         = 'https://github.com/WWWZZ321/RTMapSDK'
+  s.homepage         = 'https://gitee.com/wwwzz321/RTMapSDK'
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WWWZZ321' => 'zhangzhi@njfae.com' }
