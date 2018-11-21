@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
                     ARSDK AR导航，依赖另外两个库
                          DESC
 
-  s.homepage         = 'https://gitee.com/wwwzz321/RTMapSDK'
+  s.homepage         = 'https://github.com/WWWZZ321/RTMapSDK'
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WWWZZ321' => 'zhangzhi@njfae.com' }
-  s.source           = { :git => 'https://gitee.com/wwwzz321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
+  s.source           = { :git => 'https://github.com/WWWZZ321/RTMapSDK.git', :tag => s.version.to_s , :submodules => true }
 
   s.ios.deployment_target = '8.0'
 
