@@ -35,4 +35,3 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 Pods/
-*/libRTLbsLocation.a
